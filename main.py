@@ -1,8 +1,11 @@
 # main.py
+import sys
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import time
 from BackEnd import Preprocessing, FeatureExtraction, NeuralKey, Comparison
 from Data import Datass
-from Storage import db_handler
+from Storage_demo import db_handler
 
 
 def main():
